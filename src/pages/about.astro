@@ -1,4 +1,7 @@
 ---
+const pageTitle = "About Me";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
@@ -7,17 +10,18 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>vinono mountain</title>
+    <title>{pageTitle}</title>
+    <style>
+      h1 {
+        color: purple;
+        font-size: 4rem;
+      }
+    </style>
+    <Nav />
   </head>
   <h1></h1>
   <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
-
     <h1>About Me</h1>
-    <h2>... and my new Astro site!</h2>
+    <Footer />
   </body>
-
-
 </html>
