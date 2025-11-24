@@ -5,8 +5,10 @@ const withPWA = require("@ducanh2912/next-pwa").default({
 });
 
 const nextConfig = {
+  output: 'export',
   trailingSlash: true,
   images: {
+    unoptimized: true,
     loader: 'custom',
     loaderFile: './lib/cloudinary-loader.ts',
   },
