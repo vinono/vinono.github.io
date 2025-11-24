@@ -1,21 +1,9 @@
 export default function Footer() {
-  const platform = "github"
-  const username = "ononiv"
-
   return (
-    <footer className="border-t mt-auto p-4">
-      <div className="container mx-auto text-center">
+    <footer className="border-t border-border mt-auto py-8 bg-neutral-50 dark:bg-neutral-900/50">
+      <div className="container mx-auto text-center text-sm text-muted">
         <p>
-          Build by{' '}
-          <a
-            href={`https://www.${platform}.com/${username}`}
-            className="text-blue-600 hover:underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {platform}
-          </a>
-          !
+          Build by 💗
         </p>
       </div>
     </footer>
